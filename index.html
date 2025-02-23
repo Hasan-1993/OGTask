@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/avif" href="/images/favicon.avif">
+    <script src="https://kit.fontawesome.com/cca9bc1248.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Cuddle Clones</title>
+</head>
+
+<body>
+    <div class="top">
+        <p class="pIntro">2,500+
+            <i class="fa-solid fa-star" style="color:#F7F7FE"></i>
+            <i class="fa-solid fa-star" style="color:#F7F7FE"></i>
+            <i class="fa-solid fa-star" style="color:#F7F7FE"></i>
+            <i class="fa-solid fa-star" style="color:#F7F7FE"></i>
+            <i class="fa-solid fa-star" style="color:#F7F7FE"></i>
+            Reviews
+        </p>
+    </div>
+    <nav class="navbar">
+        <div class="navDiv">
+            <a href="/"><img src="/images/CCLogo.png" alt="ccLogo" style="height: 3.5em; margin: 0.5em 0;"></a>
+            <div class="menuBtn" onclick="toggleMenu()">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </div>
+            <ul class="navList" id="menuToggled">
+                <li><a href='#'><b>VIEW ALL</b></a></li>
+                <li><a href='#'>Custom Pet Clones</a></li>
+                <li><a href='#'>Pajamas</a></li>
+                <li><a href='#'>Pet Portraits</a></li>
+                <li><a href='#'>Knit Sweaters</a></li>
+                <li><a href='#'>Golf</a></li>
+                <li><a href='#'>Accessories</a></li>
+            </ul>
+            <div class="navIcons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="pgTitle">
+        <h1>Create Your Custom Cuddle Clone!</h1>
+    </div>
+    <section>
+        <div class="section1">
+            <div class="circle c1">
+                <h2>STEP 1</h2>
+            </div>
+            <div class="form1">
+                <h1>Your Information:</h1>
+                <form>
+                    <label for="email">Email*</label>
+                    <input type="email" placeholder="Enter Your Email Here" name='email' id="email" required>
+                    <label for="mobile">Phone Number:</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Phone Number Here">
+                </form>
+            </div>
+            <button class='btnSec1' type="button">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <hr>
+    </section>
+    <section>
+        <div class="section1">
+            <h1>Select Your Type of Pet</h1>
+            <div class="circles">
+                <div>
+                    <div class="circle2">
+
+                    </div>
+                    <h2>Dog</h2>
+                </div>
+                <div>
+                    <div class="circle2">
+
+                    </div>
+                    <h2>Cat</h2>
+                </div>
+                <div>
+                    <div class="circle2">
+
+                    </div>
+                    <h2>Horse</h2>
+                </div>
+                <div>
+                    <div class="circle2">
+
+                    </div>
+                    <h2>Other</h2>
+                </div>
+            </div>
+            <div class="form1">
+                <h1>Let's Get to Know Your Pet!</h1>
+                <form>
+                    <label for="petName">Your Pet's Name</label>
+                    <input type="text" placeholder="Enter Your Pet's Name" name='petName' id="petName">
+
+                    <label for="petBreed">Your Pet's Breed</label>
+                    <p style="text-align: start;">We can make a Cuddle Clone of any breed! If the breed you are looking
+                        for is not listed, please select "Other/Mixed" from the dropdown</p>
+                    <input type="text" placeholder="Pug, Beagle, Great Dane, etc." name='petBreed' id="petBreed">
+
+                    <label for="petAge">Your Pet's Age</label>
+                    <input type="number" name="petAge" id="petAge" placeholder="Select Age">
+                </form>
+            </div>
+            <button class='btnSec1' type="button">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="section1">
+            <h1>Pet Details</h1>
+            <div class="dragAndDrop">
+                <h3>Upload Pet Photos</h3>
+                <p>At least 3 images of your pet are required for your Cuddle Clone. We recommend uploading more
+                    pictures if you have them!
+                    <br><br>Please include any special markings your pet has. (Max of 9 Images)
+                </p>
+                <form class="form2">
+                    <label for="photos">Drag + Drop OR </label>
+                    <button type='button' onClick="document.getElementById('photos').click()"><i
+                            class="fa-solid fa-camera-retro"></i> Select File</button>
+                    <input type="file" id="photos" name="photos" multiple style="display:none">
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="section1">
+            <h1>Unique Characteristics</h1>
+            <h3>(Optional Step)</h3>
+            <p class="uniqueCharP1">Please add a description (and image if you have one) of your pet's distinguishing
+                characteristics to help
+                us capture what makes your pet unique! (Max of 10 Images)</p>
+            <div class="dragAndDrop" style="padding:1vw; margin-bottom: 2em;">
+                <div>
+                    <div class="smCircle">
+                        <p><b>1</b></p>
+                    </div>
+                </div>
+                <textarea disabled id="uniqueCharP2">Describe your pet's unique characteristics here...</textarea>
+                <form class="form2">
+                    <label for="photos">Drag + Drop OR </label>
+                    <button type='button' onClick="document.getElementById('photos').click()"><i
+                            class="fa-solid fa-camera-retro"></i> Select File</button>
+                    <input type="file" id="photos" name="photos" multiple style="display:none">
+                </form>
+            </div>
+            <button class='btn1' type="button"><b>+ Add Another Unique Characteristic</b></button>
+            <button class='btnSec1' type="button">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="section1">
+            <h1>Pet Info</h1>
+            <h1>Eye Color</h1>
+            <p style="font-size: large;">Select Eye Color for Both Eyes</p>
+            <label><input class="cb" type='checkbox'>Select if your pet has 2 different colored eyes</label>
+            <div class="circleGrid">
+                <div>
+                    <div class="circle2" style="background-color: #000000;"></div>
+                    <p>Black</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #603618;"></div>
+                    <p>Dark Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #743F1D;"></div>
+                    <p>Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #84481F;"></div>
+                    <p>Dark Redish Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #AC7740;"></div>
+                    <p>Redish Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #C58342;"></div>
+                    <p>Light Redish Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #D0C084;"></div>
+                    <p>Yellow Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #B5672F;"></div>
+                    <p>Light Brown</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #DBB95F;"></div>
+                    <p>Peach</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #EDE8B3;"></div>
+                    <p>Yellow</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #E3E7A3;"></div>
+                    <p>Yellow Green</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #C6E4B0;"></div>
+                    <p>Light Green</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #86B241;"></div>
+                    <p>Green</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #CBE5DA;"></div>
+                    <p>Blue Green</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #D7E7A0;"></div>
+                    <p>Green Yellow</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #DCEDF9;"></div>
+                    <p>Light Blue</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #ADBFE2;"></div>
+                    <p>Blue</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #D2D4D4;"></div>
+                    <p>Gray</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #A0301D;"></div>
+                    <p>Red</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #DCEDF9;"></div>
+                    <p>Half Brown Half Blue</p>
+                </div>
+                <div>
+                    <div class="circle2" style="background-color: #F2E9F3;"></div>
+                    <p>Missing</p>
+                </div>
+            </div>
+            <h1>Ear Position</h1>
+            <div class="earDiv">
+                <div class="smEarDiv">
+                    <p>Right</p>
+                    <image src="/images/right1.svg" alt="rightEar1" />
+                    <image src="/images/right2.svg" alt="rightEar1" />
+                    <image src="/images/right3.svg" alt="rightEar1" />
+                </div>
+                <div class="smEarDiv">
+                    <p>Left</p>
+                    <image src="/images/left1.svg" alt="rightEar1" />
+                    <image src="/images/left2.svg" alt="rightEar1" />
+                    <image src="/images/left3.svg" alt="rightEar1" />
+                </div>
+            </div>
+            <button class='btnSec1' type="button">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="section1">
+            <h1>Product Options</h1>
+            <div>
+                <h3>Body Position</h3>
+                <div class="positions">
+                    <div>
+                        <image src="/images/bpos_laying.svg" alt="laying Position" />
+                        <p>Laying</p>
+                    </div>
+                    <div>
+                        <image src="/images/bpos_sitting.svg" alt="sitting Position" />
+                        <p>Sitting</p>
+                    </div>
+                    <div>
+                        <image src="/images/bpos_standing.svg" alt="standing Position" />
+                        <p>Standing</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Tail Position</h3>
+                <div class="positions">
+                    <div>
+                        <image src="/images/tpos_down.svg" alt="down Position" />
+                        <p>Down</p>
+                    </div>
+                    <div>
+                        <image src="/images/tpos_half.svg" alt="half Up Position" />
+                        <p>Half</p>
+                    </div>
+                    <div>
+                        <image src="/images/tpos_up.svg" alt="fully Up Position" />
+                        <p>Up</p>
+                    </div>
+                    <div>
+                        <image src="/images/tpos_none.svg" alt="no Tail" />
+                        <p>None</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Mouth Position</h3>
+                <div class="positions">
+                    <div>
+                        <image src="/images/mpos_cmnt.svg" alt="Mouth Position 1" />
+                        <p>Closed Mouth No Tongue</p>
+                    </div>
+                    <div>
+                        <image src="/images/mpos_cmwt.svg" alt="Mouth Position 2" />
+                        <p>Closed Mouth With Tongue</p>
+                    </div>
+                    <div>
+                        <image src="/images/mpos_omwt.svg" alt="Mouth Position 3" />
+                        <p>Open Mouth With Tongue</p>
+                    </div>
+                </div>
+            </div>
+            <button class='btnSec1' type="button">Final Step <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="section1">
+            <h1>Final Options</h1>
+            <h4>Upgrade Your Cuddle Clone!</h4>
+            <div class="upgradeDiv">
+                <div style="padding:4vw; text-align:left">
+                    <h3>Zipper Pouch</h3>
+                    <h4>+ $20</h4>
+                    <p>A zippered pocket to store a memory of your pet. Many customers request a discreet stash pocket
+                        to
+                        store their pet's ashes or photos. The pouch is located in the lower belly area.</p>
+                    <div class="pouch">
+                        <form>
+                            <input id='input1' name="zipperPouch" type="checkbox">
+                            <label for="zipperPouch">Add a Zipper Pouch</label>
+                        </form>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="upgradeSample"></div>
+                </div>
+            </div><br><br>
+            <div class="upgradeDiv">
+                <div style="padding:4vw; text-align:left">
+                    <h3>Custom Bandana</h3>
+                    <h4>+ $14</h4>
+                    <p>Elevate your custom plush Cuddle Clone experience with our delightful personalized pet bandanas
+                        that are embriodered with your pet's name!</p>
+                    <div class="dropdown" id="abc">
+                        <p>Select Bandana Color &#8681;</p>
+                    </div>
+                    <div class="pouch">
+                        <form>
+                            <input id='input1' name="bandana" type="checkbox">
+                            <label for="zipperPouch">Add a Custom Bandana</label>
+                        </form>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="upgradeSample"></div>
+                </div>
+            </div>
+            <div class="quantityForm">
+                <label for="quantity" style="font-size:large">How Many Cuddle Clones in this Exact Design Would You
+                    Like?</label><br>
+                <div class="quantityBtn">
+                    <button
+                        onClick="document.getElementById('quant').value = Number(document.getElementById('quant').value)-1">-</button>
+                    <input type="number" value="1" id="quant">
+                    <button
+                        onClick="document.getElementById('quant').value = Number(document.getElementById('quant').value)+1">+</button>
+                </div>
+            </div>
+            <button class='btnSec1' type="button">ADD TO CART</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div><img src="/images/footer_img.avif" alt="footer logo"></div>
+            <div class="footerGroup">
+                <h3>Top Selling Products</h3>
+                <div class="menuBtn2" onclick="toggleFooter()">
+                    <div class="menu2"></div>
+                    <div class="menu2"></div>
+                    <div class="menu2"></div>
+                </div>
+                <ul class="footerList" id="footerList1">
+                    <li><a href='#'><b>VIEW ALL</b></a></li>
+                    <li><a href='#'>Custom Pet Clones</a></li>
+                    <li><a href='#'>Pajamas</a></li>
+                    <li><a href='#'>Pet Portraits</a></li>
+                    <li><a href='#'>Knit Sweaters</a></li>
+                    <li><a href='#'>Golf</a></li>
+                    <li><a href='#'>Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footerGroup">
+                <h3>Customer Services</h3>
+                <div class="menuBtn2" onclick="toggleFooter()">
+                    <div class="menu2"></div>
+                    <div class="menu2"></div>
+                    <div class="menu2"></div>
+                </div>
+                <ul class="footerList" id="footerList2">
+                    <li><a href='#'>My Account</a></li>
+                    <li><a href='#'>Contact Us</a></li>
+                    <li><a href='#'>FAQ</a></li>
+                    <li><a href='#'>Policies</a></li>
+                    <li><a href='#'>Privacy Policy</a></li>
+                    <li><a href='#'>Reviews</a></li>
+                    <li><a href='#'>Terms of Service</a></li>
+                    <li><a href='#'>Refund Policy</a></li>
+                    <li><a href='#'>Help Center</a></li>
+                    <li><a href='#'>Track Your Order</a></li>
+                </ul>
+            </div>
+            <div class="footerGroup">
+                <h3>Company Information</h3>
+                <div class="menuBtn2" onclick="toggleFooter()">
+                    <div class="menu2"></div>
+                    <div class="menu2"></div>
+                    <div class="menu2"></div>
+                </div>
+                <ul class="footerList" id="footerList3">
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Blog</a></li>
+                    <li><a href='#'>Donations</a></li>
+                    <li><a href='#'>Become an Affiliate</a></li>
+                    <li><a href='#'>Accessibility Notice</a></li>
+                    <li><a href='#'>APPI Compliance</a></li>
+                    <li><a href='#'>CCPA-CPRA Compliance</a></li>
+                    <li><a href='#'>GDPR Compliance</a></li>
+                    <li><a href='#'>PIPEDA Compliance</a></li>
+                    <li><a href='#'>VCDPA Compliance</a></li>
+                </ul>
+                <div class="iconGroup">
+                    <ul class="iconList">
+                        <li><a href='#'><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href='#'><i class="fa-brands fa-square-snapchat"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        function toggleMenu() {
+            let a = document.getElementById('menuToggled');
+            if (a.style.display === 'none') {
+                a.style.display = 'block';
+            } else {
+                a.style.display = 'none';
+            }
+        }
+        function toggleFooter(){
+            let a = document.getElementById('footerList1');
+            let b = document.getElementById('footerList2');
+            let c = document.getElementById('footerList3');
+            
+            if (a.style.display === 'none') {
+                a.style.display = 'block';
+            } else {
+                a.style.display = 'none';
+            }
+            if (b.style.display === 'none') {
+                b.style.display = 'block';
+            } else {
+                b.style.display = 'none';
+            }
+            if (c.style.display === 'none') {
+                c.style.display = 'block';
+            } else {
+                c.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

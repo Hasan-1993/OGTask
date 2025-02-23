@@ -1,0 +1,535 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top {
+    background-color: #BE59CB;
+    color: white;
+    text-align: center;
+    padding: 0.8em 0;
+}
+
+.pIntro {
+    margin: 0%;
+}
+
+.navbar {
+    background-color: #F3F7F8;
+    display: flex;
+    justify-content: center;
+}
+
+.navDiv {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto 0;
+    padding: 0;
+}
+
+.navList>li>a {
+    color: #6D6B6A;
+    text-decoration: none;
+}
+
+.navIcons {
+    color: #757274;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pgTitle {
+    background-color: #EBEBEB;
+    text-align: center;
+    color: #5562C9;
+    padding: 2em;
+    margin: 0.7em 0;
+}
+
+.section1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+h1 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.form1>form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+.form1>form>input {
+    margin: 0.5em 0 3em 0;
+    width: 80%;
+    background-color: #EDEDED;
+    border: 1px solid #959595;
+    border-radius: 0.6em;
+    padding: 1.5em;
+    box-shadow: 0 0.5em 0.5em rgb(159, 159, 159);
+}
+
+.c1 {
+    z-index: 1;
+    position: absolute;
+
+}
+
+.circle {
+    background-color: #BE59CB;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.btnSec1 {
+    background-color: #BE59CB;
+    cursor: pointer;
+    margin: 4em auto;
+    padding: 1em 4em;
+    border-radius: 0.5em;
+    color: white;
+    font-size: larger;
+    border: 0px;
+    box-shadow: 0.8vw 0.8vw 1vw #d5a2fb;
+}
+
+.btnSec1:hover {
+    background-color: #af34bf;
+}
+
+.btnSec1:active {
+    background-color: #ce62de;
+}
+
+.menu {
+    display:none;
+    width: 10vw;
+    height: 1vw;
+    background-color:#6D6B6A ;
+    margin:1vw;
+}
+
+.menuBtn{
+    margin: 3vw;
+    color:#959595;
+}
+hr {
+    width: 70%;
+    color: black;
+    border: 1px solid black;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.circle2 {
+    height: 8em;
+    width: 8em;
+    background-color: #757274;
+    border-radius: 50%;
+    box-shadow: 0.6vw 0.6vw 1vw #c2c6f9;
+}
+
+.dragAndDrop {
+    background-color: #D8D8D8;
+    width: 50%;
+    margin: auto auto 10vh auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vw;
+    justify-content: space-around;
+    padding: 3em 0 5em 0;
+}
+
+.dragAndDrop>p {
+    margin: 5vw;
+}
+
+.smCircle {
+    height: 3vw;
+    width: 3vw;
+    border: 3px solid #5562C9;
+    border-radius: 50%;
+    color: #5562C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: 31%;
+}
+
+.form2 {
+    border: 1px solid black;
+    margin: auto;
+    padding: 0.5vw 3vw;
+    border-radius: 1vw;
+    box-shadow: 0 0.5em 0.5em rgb(159, 159, 159);
+}
+
+.form2>button {
+    padding: 0.7vw 1.5vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.5em 0.5em rgb(17, 31, 103);
+}
+
+.form2>button:hover {
+    background-color: rgb(180, 181, 203);
+}
+
+.uniqueCharP1 {
+    width: 50%;
+    margin: 0 auto 2em auto;
+}
+
+#uniqueCharP2 {
+    margin: 0 0 3vw 0;
+    text-align: left;
+    margin-bottom: 4vw;
+    color: #959595;
+    resize:none;
+    cursor:not-allowed;
+}
+
+.section1>h3 {
+    color: #5562C9;
+}
+
+.btn1 {
+    font-size: 1em;
+    color: #5562C9;
+    padding: 1vw;
+    margin: auto;
+    border: 2px solid #5562C9;
+    border-radius: 1vw;
+    box-shadow: 0.5vw 0.5vw 1vw #d7dafd;
+}
+
+.btn1:hover {
+    background-color: rgb(180, 181, 203);
+}
+
+.btn1:active {
+    background-color: #959595;
+}
+
+.cb {
+    margin: 1em;
+}
+
+.circle2 {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: #6D6B6A;
+    margin: 4vw;
+}
+
+.circleGrid {
+    width:70%;
+    margin: 1vw 3vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.circleGrid>div>p {
+    margin: 0;
+    height: 3em;
+}
+
+.earDiv {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.smEarDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.smEarDiv>img {
+    height: 15vw;
+    cursor: pointer;
+}
+
+.positions {
+    display: flex;
+    justify-content: center;
+}
+
+.positions>div {
+    padding: 1vw;
+}
+
+.positions>div>img {
+    width: 10vw;
+    height: 10vw;
+}
+
+.upgradeDiv {
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5vw 0.5vw 1vw #d7dafd;
+}
+
+.upgradeDiv>div {
+    margin: 0.5vw;
+    width: 50%;
+}
+
+.upgradeSample {
+    margin: auto;
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 2vw;
+    background-color: #a3a4bf;
+}
+
+.dropdown {
+    text-align: center;
+    width: fit-content;
+    margin: 2em auto;
+    padding: 0vw 3vw;
+    border: 1px solid #5562C9;
+    border-radius: 1vw;
+    box-shadow: 0.5vw 0.5vw 1vw #c7cbf9;
+    color: #6D6B6A;
+    cursor: not-allowed;
+}
+
+.pouch {
+    width: fit-content;
+    margin: auto;
+    padding: 1vw 3vw;
+    border: 1px solid #5562C9;
+    border-radius: 1vw;
+    box-shadow: 0.5vw 0.5vw 1vw #c7cbf9;
+}
+
+.quantityForm {
+    margin-top: 5vw;
+}
+
+.quantityBtn {
+    display: flex;
+    border: 1px solid black;
+    width: fit-content;
+    margin: 1em auto 0 auto;
+    cursor: pointer;
+    box-shadow: 0.7vw 0.7vw 1vw #d7dafd;
+}
+
+#quant {
+    margin: auto;
+}
+
+.quantityBtn>* {
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    width: 2.5em;
+}
+
+.footer {
+    color: white;
+    background-color: #5562C9;
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw;
+}
+
+.footerList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerList>li>a {
+    text-decoration: none;
+    color: rgb(182, 182, 211);
+}
+
+.iconList {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 1vw;
+}
+
+.iconList>li>a>i {
+    color: rgb(197, 195, 249);
+}
+
+.menu2 {
+    display:none;
+    width: 4vw;
+    height: 0.3vw;
+    background-color:#3d3b6a ;
+    margin:1vw;
+}
+
+.menuBtn2{
+    margin: 3vw;
+    color:#959595;
+}
+
+@media (max-width:900px) {
+    .footerGroup{
+        display:flex;
+        align-items: center;
+    }
+    
+    .menu2{
+        display:block;
+    }
+    
+    .dragAndDrop{
+        width:70%;
+    }
+    
+    .section1 {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footerList{
+        display:none;
+    }
+
+    .iconList {
+        justify-content: space-around;
+    }
+
+    .form1 {
+        width: 100%;
+    }
+
+    .form1>form {
+        width: 90%;
+    }
+
+    .navDiv {
+        width: 90%;
+    }
+
+    .circles {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .navList{
+        flex-direction: column;;
+    }
+
+    .uniqueCharP1{
+        width:70%;
+    }
+
+    .upgradeDiv{
+        margin:0 5vw;
+    }
+}
+
+@media (max-width:450px) {
+    .btnSec1{
+        padding:1em 2em;
+    }
+
+    .upgradeDiv{
+        flex-direction: column;
+        margin:0;
+    }
+    .upgradeDiv>div{
+        width:85%;
+    }
+    .dragAndDrop{
+        width:90%;
+    }
+
+    .navDiv {
+        flex-direction: column;
+    }
+
+    .navList {
+        align-items: start;
+    }
+
+    .navIcons {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .iconList{
+        display:none;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+
+    .circle {
+        position: static;
+        margin: auto;
+    }
+
+    .smEarDiv>img {
+        height: 25vw;
+    }
+
+    .uniqueCharP1{
+        width:90%;
+    }
+}
